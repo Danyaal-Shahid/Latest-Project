@@ -1,0 +1,152 @@
+@media screen and (max-width:1200px) {
+ #container {
+    #head-area {
+        .hide-sec {
+            .uorder-list-zero {
+
+    .uorder-list-one {
+        @include uolist-media;
+
+        }
+
+    .uorder-list-two {
+        @include uolist-media;
+
+        }   
+
+    .uorder-list-three {
+        @include uolist-media;
+
+        }
+
+    .uorder-list-four {
+        @include uolist-media;
+
+        }
+    }
+}
+
+.logo-dropdown-area {
+    .dropdown-icons {
+        .drop-search {
+            display: block;
+        }
+    }
+}
+
+    .nav-area {
+        border-top: 0.15rem solid rgb(204, 204, 204);
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        display: block;
+
+        .common {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+            color: rgb(204, 204, 204);
+            
+        }
+
+         .noun {
+            display: none;
+        } 
+
+        ::after {
+            background-color: white;
+            width: 100%;
+            height: 0.15rem;
+            color: rgb(204, 204, 204);  
+        }
+    }
+}
+}
+}
+
+@media screen and (max-width:768px) {
+    #container {
+        #head-area {
+
+            .logo-dropdown-area {
+                position:relative;                
+                
+                #navigation { 
+                    position:absolute;
+                    bottom: 3rem;
+                    left: 0rem;
+                }
+
+                .plexiglas {
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 5rem;
+
+                ::after {
+                    position: absolute;
+                    left: 32%
+                }
+
+            }
+
+            .dropdown-icons {
+                width: 100%;
+                justify-content: center;
+            }
+        }   
+    }
+}
+
+}
+
+@media screen and (max-width:572px) {
+    #container {
+        #head-area {
+            .customer-area {
+                .por-one {
+                    width: 100%;
+                    order: 1;
+                    border-top: 0.2rem solid rgb(255, 255, 255);
+                    margin-top: 1.5rem;
+                    padding-top: 1.5rem;
+                    text-align: left;
+
+                    
+                         .fas {
+                        display: none;
+                         
+                        }
+                    }
+
+                .por-two {
+                    width: 100%;
+                    text-align: left;
+
+                    a {
+
+                    .fas {
+                        display: none;
+                        }
+                    }
+                    
+                    }
+            }
+
+            .hide-sec {
+                .consider-one {
+                     .consider-two {
+                    width: 80%;
+                    align-items: left;
+                }
+                .fas {
+                        display: block;
+                    }
+            }
+            .uorder-list-zero {
+                display: none;
+            }
+
+            }   
+        }
+    }            
+}

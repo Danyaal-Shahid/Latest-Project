@@ -1,0 +1,87 @@
+.logo-dropdown-area {
+    width: 90%;
+    margin: 0rem auto;
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    margin-top: 5rem;
+
+    #navigation {
+        width: 2.5rem;
+        height: 2rem;
+        margin: 1rem 0rem 0rem 0rem;
+        cursor: pointer;
+        z-index: 100;
+
+        .bar {
+            height: 0.3rem;
+            width: 100%;
+            background-color: rgb(204, 204, 204);
+            display: block;
+            border-radius: 0.2rem;
+            transition:0.3s ease;
+        }
+
+        #bar1 {
+            transform: translateY(-0.25rem);
+        }
+
+        #bar3 {
+            transform: translateY(0.25rem);
+        }
+    }
+
+    .plexiglas {
+        width: 37%;
+        @include flex;
+        justify-content: flex-start;
+        @include font(3.5rem,rgb(204, 204, 204));
+        font-family: Campton-Book, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: bolder;
+        letter-spacing: 0.2rem;
+        position: relative;
+
+        ::after {
+            content: "THE ORIGINAL BY ROHM";
+            font-size: 0.8rem;
+            color: red;
+            position: absolute;
+            left: 0;
+            bottom: -1rem;
+            font-family: Campton-Book, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .far {
+            font-size: 1rem;
+            vertical-align: text-top;
+        }
+    }
+
+    .dropdown-icons {
+        width: 55%;
+        @include flex;
+        justify-content: flex-end;
+
+        .drop-search {
+            display: none;
+            @include drop;
+
+        }
+
+        .drop-acc {
+            @include drop;
+
+        }
+        
+        .drop-not {
+            @include drop;
+
+        }
+
+        .drop-car {
+            @include drop;
+
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@mixin flex {
+    display: flex;
+    flex-flow: row wrap;
+   }
+   
+   @mixin font ($size, $color) {
+       font-size: $size;
+       color: $color;
+   }
+   
+   @mixin uolist {
+           @include flex;
+           padding: 0rem 0rem 0rem 0rem;
+   
+           .fas {
+               font-size: 3.5rem;
+           }
+           
+           span {
+               padding: 0.9rem 3rem 0.5rem 1rem;
+               font-size: 1.5rem;
+           }
+   }
+   
+   @mixin uolist-media {
+       width: 50%;
+       margin-bottom: 2.5rem;
+       text-align: left;
+       
+   }
+   
+   @mixin drop {
+       padding: 0rem 2.5rem 0rem 0rem;
+   
+   
+       a {
+   
+           .fas {
+               @include font(4rem,darkred);
+           }
+   
+           :hover {
+               color: red;            
+           }
+   
+       }  
+   
+       .under-two {
+           font-size: 1.2rem;
+           font-weight: bold;
+           padding: 0.5rem 0rem 0rem 0rem;
+           font-family: Campton-Book, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   
+           } 
+       }

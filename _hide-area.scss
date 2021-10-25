@@ -1,0 +1,72 @@
+#hideme {
+    display: block;
+}
+
+.hide-sec {
+    width: 90%;
+    margin: 0rem auto;
+    background-color: black;
+
+    .consider-one {
+        @include flex;
+        width: 100%;
+        justify-content: space-between;
+        color: rgb(204, 204, 204);
+        margin-top: 2rem;
+
+    
+
+    .consider-two {
+        text-align: left;
+        width: 60%;
+        @include font(1.3rem,rgb(204, 204, 204));
+        word-spacing: 0.15rem;
+        font-family: sans-serif;
+        line-height: 1.5;
+    }
+    
+          .fas {
+            @include font(4rem,rgb(204, 204, 204));
+            vertical-align: sub;
+            margin-right: 2rem;
+            display: none;
+
+            :hover {
+                color: red;
+            }
+        }
+
+        }
+       
+    
+    .uorder-list-zero {
+        width: 100%;
+        margin: 0rem auto;
+        @include flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding: 2.5rem 0rem 0rem 0rem;
+        color: rgb(204, 204, 204);
+        font-family: Campton-Book, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+        .uorder-list-one {
+            @include uolist;
+        }
+        
+        .uorder-list-two {
+            @include uolist;
+            flex-wrap: nowrap;
+        }
+
+        .uorder-list-three {
+            @include uolist;
+            flex-wrap: nowrap;
+
+        }
+
+        .uorder-list-four {
+            @include uolist;
+        }
+    }
+    }

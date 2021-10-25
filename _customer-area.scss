@@ -1,0 +1,53 @@
+.customer-area {
+    width: 90%;
+    margin: 0rem auto;
+    background-color: black;
+    border-bottom: 0.15rem solid white;
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem 1rem 0rem;
+
+    .por-one {
+        .private {
+        padding: 0.5rem 0.8rem;
+        background-color: rgb(229, 62, 45);
+        font-weight: bolder;
+    }
+    
+    a {
+        @include font(1.3rem,white);
+        font-family: sans-serif;
+        padding: 0rem 1rem 0rem 0rem;
+
+    }
+    :not(.private):hover {
+        color: red;
+    }
+}
+   
+    .por-two {
+        a {
+        @include font(1.2rem,white);
+        font-weight: bolder;
+        font-family: sans-serif;
+        padding: 0rem 0rem 0rem 1rem;
+
+    
+        
+        .fas {
+            font-size: 3.3rem;
+            vertical-align: sub;
+            height: 0.5rem;
+            width: 0.5rem;
+            display: inline-block;
+            margin-right: 1.8rem;
+        }
+       
+        }
+        :hover {
+            color: red;
+          }
+  
+    }
+}

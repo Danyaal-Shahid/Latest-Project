@@ -1,0 +1,40 @@
+.nav-area {
+    width: 90%;
+    margin: 0rem auto;
+    font-family: Campton-Book, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    @include flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .common {
+        @include font(1.8rem,white);
+        padding: 1rem 1.5rem;
+        font-weight: bold;
+        text-decoration: none darkred;
+        position: relative;
+        margin: 0rem 0.5rem; 
+
+    }
+
+    
+    ::after {
+        content: "";
+        position: absolute;
+        background-color: darkred;
+        height: 0.3rem;
+        width: 0%;
+        left: 0;
+        bottom: -0.1rem;
+        transition: 0.3s; 
+        }
+            :hover {
+            color: darkred;
+    
+            ::after {
+            
+                width: 100%;
+        } 
+
+    }
+    
+}

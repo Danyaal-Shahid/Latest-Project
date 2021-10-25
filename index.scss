@@ -1,0 +1,65 @@
+@import "basic-settings";
+
+@import "mixin";
+
+#container {
+    background-color: rgb(153, 153, 153);
+    width: 100%;
+    margin: 0rem auto;
+    text-align: center;
+    padding: 0rem 0rem 0.2rem 0rem;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 45rem 6rem 3rem 50rem 30rem 2.5rem;
+    grid-auto-rows: 20rem;
+    grid-gap: 0.2rem;
+    #head-area {
+        background-color: black;
+        color: white;
+        grid-column: 1/ span 9;
+        overflow: auto;
+
+        @import "customer-area";
+        @import "hide-area";
+        @import "logo-area";
+        @import "nav-area";
+    }
+}
+
+#container #head-area .dropdown-i #nav-area {
+    grid-column: 1/ span 7;
+}
+
+#sub-nav-area {
+    grid-column: 1/ span 7;
+}
+
+#aside-area {
+    grid-column: 8/ span 2;
+    grid-row: 2/ span 3;
+}
+
+#main-area {
+    grid-column: 1/span 7;
+}
+
+#box-one {
+    grid-column: 1/span 3;
+}
+
+#box-two {
+    grid-column: 4/span 3;
+}
+
+#box-three {
+    grid-column: 7/span 3;
+}
+
+#footer-area {
+    grid-column: 1/ span 9;
+}
+
+@import "media";
+
+
